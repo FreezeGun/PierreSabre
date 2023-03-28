@@ -46,7 +46,7 @@ public class Humain {
 	        parler("Je perds " + perte + " yen.");
 	    }
 	    
-	    private void parler(String texte) {
+	    protected void parler(String texte) {
 	        System.out.println(nom + " : " + texte);
 	    }
 }
