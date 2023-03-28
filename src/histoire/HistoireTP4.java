@@ -21,6 +21,14 @@ public class HistoireTP4 {
         marco.direBonjour();
         marco.recevoir(15);
         marco.boire();
+        
+        Yakuza yaku = new Yakuza("Yaku Le Noir", "whisky", 30, "Warsong");
+
+        yaku.direBonjour();       
+        yaku.parler("Tiens, tiens, ne serait-ce pas un faible marchand qui passe par là ?");
+        yaku.extorquer(marco);
+        marco.perdreArgent(marco.seFaireExtorquer());
+        yaku.parler("J'ai piqué les " + yaku.getArgent() + " sous de Marco, ce qui me fait " + yaku.getArgentTotal() + " sous dans ma poche. Hi ! Hi !");
 
 
 	}
